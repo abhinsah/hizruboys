@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maths VOD 2.0 Batch By Hizru Academy</title>
-    <style>
+     <style>
         table {
             width: 50%;
             margin: 20px auto;
@@ -29,16 +29,31 @@
         a:hover {
             text-decoration: underline;
         }
+        #content {
+            display: none; /* Hide content initially */
+        }
     </style>
+    <script>
+        function checkPassword() {
+            var password = prompt("Please enter the password:");
+            if (password === "admin") { // Change "yourPassword" to your desired password
+                document.getElementById("content").style.display = "block"; // Show content if password is correct
+            } else {
+                alert("Incorrect password. Access denied.");
+                window.location.href = "about:blank"; // Redirect if incorrect
+            }
+        }
+    </script>
 </head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>Maths VOD 2.0 Batch By Hizru Academy</th>
-            </tr>
-        </thead>
-        <tbody>
+<body onload="checkPassword()">
+    <div id="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Links</th>
+                </tr>
+            </thead>
+            <tbody>
            <tr><td><a href="https://appxcontent.kaxa.in/paid_course2/2023-12-09-0.31685231409015713.pdf">1. (PERCENTAGE (प्रतिशत )) Percentage (ClassRoom Sheet)(PDF📕)</a></td></tr>
 <tr><td><a href="https://abhinsah.github.io/hizruboys/player/#https://appx-recordings-mcdn.akamai.net.in/videos/rgvikramjeet-data/413406-1702104829/hls/1080p/master-5377367.930973194.m3u8.m3u8">2. (PERCENTAGE (प्रतिशत )) Demo 01 (Percentage)</a></td></tr>
 <tr><td><a href="https://appxcontent.kaxa.in/paid_course2/2024-01-11-0.29910179037142104.pdf">3. (PERCENTAGE (प्रतिशत )) Percentage (Class Notes)(PDF📕)</a></td></tr>
@@ -471,7 +486,8 @@
 <tr><td><a href="https://appx-wsb-gcp-mcdn.akamai.net.in/paid_course2/2023-10-31-0.9541405655520887.pdf">430. (STATISTICS (सांख्यिकी).) Statistics (Practice Sheet With Solution)(PDF📕)</a></td></tr>
 <tr><td><a href="https://abhinsah.github.io/hizruboys/player/#https://appx-recordings-mcdn.akamai.net.in/drm/dde93269-7a70-4d1a-8ee6-be5098592fa7/720p/drm-hls/master-8834133.31039806.m3u8.m3u8">431. (STATISTICS (सांख्यिकी).) STATISTICS (सांख्यिकी) 03</a></td></tr>
 <tr><td><a href="https://abhinsah.github.io/hizruboys/player/#https://appx-recordings-mcdn.akamai.net.in/drm/accaa038-b152-45ce-b40e-1594598e11fb/720p/drm-hls/master-9440328.549590936.m3u8.m3u8">432. (STATISTICS (सांख्यिकी).) STATISTICS (सांख्यिकी) 04</a></td></tr>
-        </tbody>
-    </table>
+         </tbody>
+        </table>
+    </div>
 </body>
 </html>
